@@ -1,0 +1,84 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 407-574-363
+ERROR:model_service:Error in processing query.'ascii' codec can't encode character '\u2019' in position 7: ordinal not in range(128)file_name: assetpanda.txtquery: How to edit the groups
+Traceback (most recent call last):
+  File "/home/dell/Documents/asset_panda/vishal_sir_model/langchain_chatbot_OpenAI/langchain_chatbot_OpenAI/model_service.py", line 21, in process_query
+    searched_documents = FAISS.from_texts([texts], embeddings)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_community/vectorstores/faiss.py", line 965, in from_texts
+    embeddings = embedding.embed_documents(texts)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_openai/embeddings/base.py", line 517, in embed_documents
+    return self._get_len_safe_embeddings(texts, engine=engine)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_openai/embeddings/base.py", line 333, in _get_len_safe_embeddings
+    response = self.client.create(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/resources/embeddings.py", line 113, in create
+    return self._post(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 1200, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 889, in request
+    return self._request(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 910, in _request
+    request = self._build_request(options)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 452, in _build_request
+    headers = self._build_headers(options)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 413, in _build_headers
+    headers = httpx.Headers(headers_dict)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_models.py", line 72, in __init__
+    self._list = [
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_models.py", line 76, in <listcomp>
+    normalize_header_value(v, encoding),
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_utils.py", line 53, in normalize_header_value
+    return value.encode(encoding or "ascii")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2019' in position 7: ordinal not in range(128)
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:04:31] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 549-616-193
+ERROR:model_service:Error in processing query.'ascii' codec can't encode character '\u2019' in position 7: ordinal not in range(128)file_name: assetpanda.txtquery: How to edit the groups
+Traceback (most recent call last):
+  File "/home/dell/Documents/asset_panda/vishal_sir_model/langchain_chatbot_OpenAI/langchain_chatbot_OpenAI/model_service.py", line 21, in process_query
+    searched_documents = FAISS.from_texts([texts], embeddings)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_community/vectorstores/faiss.py", line 965, in from_texts
+    embeddings = embedding.embed_documents(texts)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_openai/embeddings/base.py", line 517, in embed_documents
+    return self._get_len_safe_embeddings(texts, engine=engine)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/langchain_openai/embeddings/base.py", line 333, in _get_len_safe_embeddings
+    response = self.client.create(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/resources/embeddings.py", line 113, in create
+    return self._post(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 1200, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 889, in request
+    return self._request(
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 910, in _request
+    request = self._build_request(options)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 452, in _build_request
+    headers = self._build_headers(options)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/openai/_base_client.py", line 413, in _build_headers
+    headers = httpx.Headers(headers_dict)
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_models.py", line 72, in __init__
+    self._list = [
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_models.py", line 76, in <listcomp>
+    normalize_header_value(v, encoding),
+  File "/home/dell/Documents/asset_panda/ll_env/lib/python3.9/site-packages/httpx/_utils.py", line 53, in normalize_header_value
+    return value.encode(encoding or "ascii")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2019' in position 7: ordinal not in range(128)
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 00:55:22] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 549-616-193
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:faiss.loader:Loading faiss with AVX512 support.
+INFO:faiss.loader:Successfully loaded faiss with AVX512 support.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 00:55:55] "POST /query HTTP/1.1" 200 -
